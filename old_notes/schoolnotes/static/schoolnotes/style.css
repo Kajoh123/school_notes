@@ -1,0 +1,20 @@
+.container{
+    text-align: center;
+}
+
+body{
+    background-color: whitesmoke;
+    min-height: 100%;
+}
+
+.header{
+    background-color: rgb(236, 235, 235);
+}
+
+.footer{
+    font-weight: bold;
+}
+
+h3:hover{
+    background-color: lightgray;
+}

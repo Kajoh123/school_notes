@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'schoolnotes/style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Lista lekcji</h1>
+            </div>
+            <br>
+            <p>
+                {% for les in lesson %}   
+                        <h2>{{les.subject.name}} {{les.date}}</h2>
+                        <button><h3>T: {{les.topic}}</h3></button>
+                            <p>{{les.description}}</p>
+                            <p>{{les.subject.teacher}}</p>
+                {% endfor %}
+            </p>
+            <div class="footer">
+                <p>Jakub Chojak 2020.</p>
+            </div>
+        </div>
+    </body>
+</html>
